@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "super font";
+    src: url(assets/awesomefont.TTF) format("truetype");
+}
+
+body {
+    font-family: "super font", Arial, Helvetica, sans-serif;
+    background-color: #87D37C;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+span.big {
+    font-size: 40px;
+}
