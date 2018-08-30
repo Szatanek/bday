@@ -1,17 +1,45 @@
 @font-face {
-    font-family: "super font";
-    src: url(assets/awesomefont.TTF) format("truetype");
+    font-family: "super font bold";
+    src: url(assets/AmaticSC-Bold.ttf) format("truetype");
+    font-weight: bold;
+	font-style: normal;
 }
 
 body {
-    font-family: "super font", Arial, Helvetica, sans-serif;
-    background-color: #87D37C;
+    font-family: "super font bold", Arial, Helvetica, sans-serif;
+    background: #ffadb9 url('assets/sparkling1.gif');
+    font-weight: normal;
+    font-size: 70px;
 }
+
+img { max-width: 100%; }
 
 h1 {
-    font-size: 80px;
+    font-size: 110px; text-align: center;
 }
 
-span.big {
-    font-size: 40px;
+h2 { text-align: center; }
+
+p { text-align: center; overflow: hidden; }
+
+ul { list-style: none; padding: 0; margin: 0; }
+ul li { padding: 4px 0; }
+ul li::before { content: "\2603"; margin-right: 16px; }
+
+.wrapper { 
+    max-width: 1015px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.big {
+    font-size: 90px;
+}
+
+.red { color: #750002; }
+
+.age { width: 50%; float: left; }
+
+@media (min-width: 786px) {
+    .age { width: auto; float: none; }
 }

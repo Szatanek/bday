@@ -1,45 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
     <head>
+        <meta charset="utf-8">
         <title>Wszystkiego najlepszego !</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
-        <img src="assets/Pink-baloons.png" />
-        <h1>Wszystkiego najlepszego!</h1>
-        <img src="assets/baloon-yellow.png" />
-        <img src="assets/baloon-pink.png" />
-        <p>Z okazji Twoich <span class="big">30 urodzin</span> życzymy Ci wszystkiego najlepszego!</p>
-        <p>Przygotowaliśmy też drobny prezent...</p>
-        <p>... który musisz sobie znaleźć :D</p>
+        <div class="wrapper">
+            <img src="assets/Pink-baloons.png" />
+            <!-- jakieś fancy tło co się przewija i mryga najlepiej dodać -->
+            <h1>Wszystkiego najlepszego!</h1>
+            <p>
+                <img class="age" src="assets/3.png" />
+                <img class="age" src="assets/0.png" />
+            </p>
+            <p>Z okazji Twoich <strong class="big">30 urodzin</strong> życzymy Ci <strong class="big red">wszystkiego najlepszego!</strong></p>
+            <p>Przygotowaliśmy też drobny prezent...</p>
+            <p>... który musisz sobie znaleźć :D</p>
 
-        <p>
-            Poniżej krótka instrukcja, jak możesz znaleźć prezent:
-            <ul>
-                <li>Stań twarzą do garażu.</li>
-                <li>Skręć w lewo</li>
-                <li>Idź 5 kroków</li>
-                <li>Skręć w prawo</li>
-                <li>Idź 5 kroków</li>
-                <li>Otwórz drzwi</li>
-                <li>Wejdź do sieni</li>
-                <li>Spójrz na schody</li>
-                <li>Skręć w prawo</li>
-                <li>Zrób 2 kroki</li>
-                <li>Skręć w lewo</li>
-                <li>Zrób 5 kroków</li>
-                <li>Skręć w lewo</li>
-                <li>Otwórz drzwi</li>
-                <li>Zrób 3 kroki</li>
-                <li><span class="big">Cel Twojej podróży znajduje się przed Tobą!</span></li>
-            </ul>
-        </p>
-        <img style="float: right" src="assets/baloon-blue.png" />
-
-        <audio autoplay loop>
+            <p>
+                <h2>Poniżej krótka instrukcja, jak możesz to zrobić</h2>
+                <ul>
+                    <li>Stań twarzą do garażu</li>
+                    <li>Skręć w lewo</li>
+                    <li>Idź 5 kroków</li>
+                    <li>Skręć w prawo</li>
+                    <li>Idź 5 kroków</li>
+                    <li>Otwórz drzwi</li>
+                    <li>Wejdź do sieni</li>
+                    <li>Spójrz na schody</li>
+                    <li>Skręć w prawo</li>
+                    <li>Zrób 2 kroki</li>
+                    <li>Skręć w lewo</li>
+                    <li>Zrób 5 kroków</li>
+                    <li>Skręć w lewo</li>
+                    <li>Otwórz drzwi</li>
+                    <li>Zrób 3 kroki</li>
+                    <li><span class="big">Cel Twojej podróży znajduje się przed Tobą!</span></li>
+                </ul>
+            </p>
+            <p>
+                <img style="vertical-align: center" src="assets/tyskie.png" />
+            </p>
+        </div>
+        <audio autoplay loop id="playAudio">
             <source src="assets/urodziny.mp3" type="audio/mpeg">
             Nie działa Ci przeglądarka, posłuchaj sobie w domu :(
         </audio>
+        <iframe src="assets/urodziny.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+        </iframe> 
         <script src="scripts.js"></script>
     </body>
 </html>
